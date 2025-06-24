@@ -35,10 +35,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const typingTexts = ["Aspiring Ethical Hacker", "IT Student", "Web Developer"];
+const typingTexts = ["an Aspiring Ethical Hacker", "an IT Student", "a Web Developer"];
 const typingSpeed = 100;  // milliseconds per character
 const erasingSpeed = 75;
-const delayBetween = 2000;  // pause before erasing
+const delayBetween = 1000;  // pause before erasing
 let textIndex = 0;
 let charIndex = 0;
 
