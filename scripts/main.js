@@ -35,6 +35,41 @@ window.addEventListener('scroll', () => {
     }
 });
 
+const typingTexts = ["Aspiring Ethical Hacker", "IT Student", "Web Developer"];
+const typingSpeed = 100;  // milliseconds per character
+const erasingSpeed = 75;
+const delayBetween = 2000;  // pause before erasing
+let textIndex = 0;
+let charIndex = 0;
+
+function type() {
+    if (charIndex < typingTexts[textIndex].length) {
+        document.getElementById("typing-text").textContent += typingTexts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+    } else {
+        setTimeout(erase, delayBetween);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        document.getElementById("typing-text").textContent = typingTexts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
+    } else {
+        textIndex++;
+        if (textIndex >= typingTexts.length) textIndex = 0;
+        setTimeout(type, typingSpeed);
+    }
+}
+
+// Start the typing effect on page load
+document.addEventListener("DOMContentLoaded", function() {
+    if (typingTexts.length) setTimeout(type, delayBetween);
+});
+
+
 // Back to Top Button
 const backToTopBtn = document.getElementById('backToTop');
 
