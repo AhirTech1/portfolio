@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhavya | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <div class="logo">Bhavya</div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Bhavya</span></h1>
+        <p class="hero-subtitle">Aspiring Ethical Hacker | IT Student | Web Developer</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+    </div>
+    <div class="scroll-down">
+        <span>Scroll Down</span>
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about section">
+    <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="about-content">
+        <p>I'm a passionate BTech IT student with a keen interest in cybersecurity and web development. My journey in technology focuses on creating secure, efficient web solutions while exploring the fascinating world of ethical hacking.</p>
+        <p>When I'm not coding, you can find me researching the latest security vulnerabilities or contributing to open-source projects. I believe in continuous learning and aim to make a meaningful impact through technology.</p>
+    </div>
+</section>
+
+<section id="skills" class="skills section">
+    <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3>Web Development</h3>
+            <ul class="skill-list">
+                <li class="skill-item" data-level="90">HTML5
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <span class="skill-percent"></span>
+                </li>
+                <li class="skill-item" data-level="85">CSS3
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <span class="skill-percent"></span>
+                </li>
+                <li class="skill-item" data-level="80">JavaScript
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <span class="skill-percent"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Security Tools</h3>
+            <ul class="skill-list">
+                <li class="skill-item" data-level="75">Nmap
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <span class="skill-percent"></span>
+                </li>
+                <li class="skill-item" data-level="70">Burp Suite
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <span class="skill-percent"></span>
+                </li>
+                <li class="skill-item" data-level="65">Metasploit
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <span class="skill-percent"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects section">
+    <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="project-list">
+        <div class="project-item">
+            <div class="project-img">
+                <img src="https://via.placeholder.com/400x250/444/fff?text=Project+1" alt="Project 1">
+            </div>
+            <div class="project-content">
+                <h3>Dice Game</h3>
+                <p>An elegant looking single page game web app with multiple modes which includes online multiplayer mode with a chat feature to communicate with the opponent in real time.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-code"></i> View Code</a>
+                    <a href="#" target="_blank" class="btn btn-small btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="https://via.placeholder.com/400x250/444/fff?text=Project+2" alt="Project 2">
+            </div>
+            <div class="project-content">
+                <h3>Network Scanner</h3>
+                <p>A Python-based network scanning tool that identifies connected devices and open ports with Nmap integration.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Nmap</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-code"></i> View Code</a>
+                    <a href="#" target="_blank" class="btn btn-small btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact section">
+    <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="contact-container">
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><i class="fas fa-envelope"></i> bhavya@example.com</p>
+            <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Bhavya. All rights reserved.</p>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
